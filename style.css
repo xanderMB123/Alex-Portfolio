@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#mainImg {
+    display: block;
+    margin: auto;
+    background-size: cover;
+}
+
+.navbar-dark .navbar-brand {
+    color: grey;
+}
+
+#nav_burr {
+    background-color: black;
+}
+
+#nav_burr .navbar-nav .nav-link {
+    color: grey;
+}
+
+#nav_burr .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+#aboutMe {
+    border: 3px solid grey;
+    border-radius: 5px;
+    width: 50%;
+    padding: 20px;
+    margin: 10% 25%; 
+    background-color: lightgrey;
+    font-weight: 900;
+}
+
+#aboutText {
+    color: rgb(0, 112, 255);
+}
+
+#schoolProjects {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: 10%;
+}
+
+#school {
+    margin: auto;
+    text-align: center;
+    color: rgb(0, 112, 255)
+}
+
+.containers {
+    background-color: lightgray;
+    margin:  20px auto;
+    padding: 5%;
+    border: 3px solid grey;
+    border-radius: 5px;
+}
+
+.card_title {
+    text-align: center;
+}
+
+.card_image {
+    width: 230px;
+    height: 230px;
+}
+
+.card_description {
+    text-align: center;
+}
+
+.card_A-tag {
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 25%;
+    background-color: rgb(0, 112, 255);
+    color: white;
+}
+
+.card_A-tag:hover {
+    background-color: white;
+    color: rgb(0, 112, 255);
+    text-decoration: none;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 3px solid grey;
+    border-radius: 5px; 
+    margin-top: 6px; 
+    margin-bottom: 6px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background-color: rgb(0, 112, 255);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: rgb(0, 112, 255);
+}
+
+.contact {
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+textarea {
+    padding: 40px 10px;
+}
+
+.contact_h3 {
+    margin: 10% 10% 20% 10%;
+    padding: 3px 0 0 5px;
+    text-align: center;
+    color: rgb(0, 112, 255);
+}
+
+#message, #name, #phone, #email {
+    font-size: 1em;
+}
+
+@media (min-width: 768px) {
+
+    .navbar-dark .navbar-brand {
+        font-size: 26px;
+    }
+
+    #nav_burr .navbar-nav .nav-link {
+        font-size: 26px;
+    }
+
+    .contact_h3 {
+        margin: 5% 0 10% 0;
+    }
+
+    #schoolProjects {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #school {
+        margin-bottom: 5%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .navbar-dark .navbar-brand {
+        font-size: 26px;
+    }
+
+    #nav_burr .navbar-nav .nav-link {
+        font-size: 26px;
+    }
+
+    #schoolProjects {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 5px;
+        margin: auto;
+    }
+
+    #school {
+        margin-top: -3%;
+    }
+}
